@@ -12,6 +12,14 @@ import projImg9 from "../assets/img/chat.png";
 import projImg10 from "../assets/img/game.png";
 import projImg11 from "../assets/img/cal.png";
 import projImg12 from "../assets/img/Nslook.png";
+import blog1 from "../assets/img/blog1.jpg";
+import blog2 from "../assets/img/blog2.jpg";
+import blog3 from "../assets/img/blog3.jpg";
+import certificate1 from "../assets/img/C++.png";
+import certificate2 from "../assets/img/OS.png";
+import certificate3 from "../assets/img/badge.png";
+import imgdoan from "../assets/img/imgdoan.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import "./Projects.css";
@@ -20,56 +28,72 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Youth-Diary Website",
+      description:
+        "Participated in the Youth Diary website design competition organized by the Central Committee of the Ho Chi Minh Communist Youth Union.",
+      imgUrl: imgdoan,
+      link: "https://trinhthanhthao.id.vn/",
+    },
+    {
       title: "VKUMentor Website",
       description:
         "The project won Third Prize in the Website Design Competition at the Vietnam-Korea University of Information and Communication Technology, University of Danang",
       imgUrl: projImg1,
+      link: "https://github.com/TTTT0803/VKUMentor",
     },
     {
       title: "Java Coffee App",
       description:
         "Fundamental Project 1 - A Café Management System coded in Java and managed with SQL Server.",
       imgUrl: projImg2,
+      link: "https://github.com/TTTT0803/QLCafe.git",
     },
     {
       title: "Library Manager App",
       description:
         "Library Management Application - First-year major project using Java and SQL Server for database management.",
       imgUrl: projImg3,
+      link: "https://github.com/TTTT0803/QLThuVien.git",
     },
     {
       title: "Ecommerce App",
       description:
         "Product and Purchase Management Application – Client-Server Model, developed using Java and SQL Server for database management.",
       imgUrl: projImg4,
+      link: "https://github.com/TTTT0803/Ecommerce.git",
     },
     {
       title: "ATM App",
       description:
         "Java Assignment – Using TCP/IP in a Client-Server Model with Java and SQL Server for database management.",
       imgUrl: projImg5,
+      link: "https://github.com/TTTT0803/ATM_TCP-IP.git",
     },
     {
       title: "Mini Game",
       description: "Purus Games - Game Developer Intern 2409 - Test",
       imgUrl: projImg6,
+      link: "https://github.com/TTTT0803/Test-Intern-PurusGames.git",
     },
     {
       title: "File explore App",
       description:
         "Introduction to I/O Streams - Java, Semester 2, First Year.",
       imgUrl: projImg7,
+      link: "https://github.com/TTTT0803/JAVA/tree/master/FileExplorerGK",
     },
     {
       title: "Milk Tea Website",
       description: "Website Milk Tea - Ngày 1 làm quen với HTML/CSS",
       imgUrl: projImg8,
+      link: "https://github.com/TTTT0803/HTML-CSS-JS/tree/master/Web_MilkTea",
     },
     {
       title: "Chat App",
       description:
         "Simple Chat Application between Client and Server using Java.",
       imgUrl: projImg9,
+      link: "https://www.tiktok.com/@truahehocit/video/7356615556591635729?lang=vi-VN",
     },
     {
       title: "Model Game",
@@ -81,12 +105,14 @@ export const Projects = () => {
       description:
         "Computer Simulation - Introduction to Java Swing Assignment.",
       imgUrl: projImg11,
+      link: "https://github.com/TTTT0803/JAVA/tree/master/CalculatorJavaSwing",
     },
     {
       title: "Nslookup App",
       description:
         "Nslookup is an application for querying domain name information and diagnosing network issues",
       imgUrl: projImg12,
+      link: "https://github.com/TTTT0803/JAVA/tree/master/Network%20NsLookup",
     },
   ];
 
@@ -134,37 +160,142 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <div class="blog-container">
-                          <div class="blog-card">
-                            <div class="blog-img-container"></div>
-                            <div class="blog-card-content">
-                              <h1 class="blog-heading">
+                        <div className="blog-container">
+                          <div className="blog-card">
+                            <div className="blog-img-container">
+                              <a
+                                href="https://github.com/TTTT0803/TTTT0803/blob/master/images/OS.png"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={certificate2}
+                                  alt="Night City"
+                                  className="blog-img"
+                                />
+                              </a>
+                            </div>
+                            <div className="blog-card-content">
+                              <h1 className="blog-heading">
+                                Operating Systems Certificate
+                              </h1>
+                              <p className="blog-excerpt">
+                                Completed operating system course on Codelearn,
+                                covering processes, memory management, and file
+                                systems.
+                              </p>
+                              <p className="blog-author">6/11/2024</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="blog-container">
+                          <div className="blog-card">
+                            <div className="blog-img-container">
+                              <a
+                                href="https://codelearn.io/share/3f1b853e-cff4-410a-ada0-74752999afd4"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={certificate1}
+                                  alt="Night City"
+                                  className="blog-img"
+                                />
+                              </a>
+                            </div>
+                            <div className="blog-card-content">
+                              <h1 className="blog-heading">
+                                Codelearn C++ Certificate
+                              </h1>
+                              <p className="blog-excerpt">
+                                Completed C++ Basic on Codelearn
+                              </p>
+                              <p className="blog-author">21/1/2024</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="blog-container">
+                          <div className="blog-card">
+                            <div className="blog-img-container">
+                              <a
+                                href="https://github.com/TTTT0803/TTTT0803/blob/master/images/badge.png"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={certificate3}
+                                  alt="Night City"
+                                  className="blog-img"
+                                />
+                              </a>
+                            </div>
+                            <div className="blog-card-content">
+                              <h1 className="blog-heading">
                                 A Journey Through the Night City
                               </h1>
-                              <p class="blog-excerpt">
-                                Exploring the beauty of the city at night, the
-                                dazzling lights, the vibrant streets, and the
-                                stories hidden in every corner.
+                              <p className="blog-excerpt">
+                                Certified in Linux, Windows, and Mobile OS by
+                                Cisco Networking Academy.
                               </p>
-                              <p class="blog-author">By Jrom</p>
+                              <p className="blog-author">6/11/2024</p>
                             </div>
                           </div>
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="four">
-                        <div class="blog-container">
-                          <div class="blog-card">
-                            <div class="blog-img-container"></div>
-                            <div class="blog-card-content">
-                              <h1 class="blog-heading">
-                                A Journey Through the Night City
+                        <div className="blog-container">
+                          <div className="blog-card">
+                            <div className="blog-img-container">
+                              <a
+                                href="https://www.youtube.com/watch?v=84IOtc05TuA&t=1s"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={blog1}
+                                  alt="Night City"
+                                  className="blog-img"
+                                />
+                              </a>
+                            </div>
+                            <div className="blog-card-content">
+                              <h1 className="blog-heading">
+                                XAMPP Error: MySQL shutdown unexpectedly
                               </h1>
-                              <p class="blog-excerpt">
-                                Exploring the beauty of the city at night, the
-                                dazzling lights, the vibrant streets, and the
-                                stories hidden in every corner.
+                              <p className="blog-excerpt">
+                                How to fix MySQL error in XAMPP server.
                               </p>
-                              <p class="blog-author">By Jrom</p>
+                              <p className="blog-author">19/2/2025</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="blog-container">
+                          <div className="blog-card">
+                            <div className="blog-img-container">
+                              <a
+                                href="https://www.youtube.com/watch?v=vn97BdYx2K8"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={blog2}
+                                  alt="Night City"
+                                  className="blog-img"
+                                />
+                              </a>
+                            </div>
+                            <div className="blog-card-content">
+                              <h1 className="blog-heading">
+                                Npm ERR code ERESOLVE react | Npm install error
+                                in visual studio code [Fast]
+                              </h1>
+                              <p className="blog-excerpt">
+                                How to solve eresolve unable to resolve
+                                dependency tree in react ....
+                              </p>
+                              <p className="blog-author">18/2/2025</p>
                             </div>
                           </div>
                         </div>

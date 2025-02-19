@@ -1,7 +1,7 @@
 .blog-container {
-  font-family: "Karla", sans-serif;
+  font-family: "Poppins", sans-serif; /* Font chữ hiện đại, mềm mại hơn */
   color: #232323;
-  height: 35vh;
+  min-height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,71 +10,95 @@
 
 .blog-card {
   background-color: #fff;
+  width: 100%;
   max-width: 900px;
-  max-height: 320px;
   display: flex;
+  flex-direction: row;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
-.blog-card:hover {
-  transform: translateY(-5px);
-}
-
+/* Hình ảnh */
 .blog-img-container {
   flex: 1;
-  background-image: url("../assets/img/banking.png");
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
 }
 
+.blog-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Nội dung bên phải */
 .blog-card-content {
-  flex: 1.5;
-  padding: 30px;
+  flex: 2;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.blog-title {
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #777;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-
+/* Tiêu đề bài viết */
 .blog-heading {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.blog-excerpt {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.blog-author {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 20px; /* Giảm cỡ chữ tiêu đề */
+  font-weight: 600;
   color: #333;
-  margin-top: auto;
-  border-top: 1px solid #ddd;
-  padding-top: 15px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
 }
 
-@media only screen and (max-width: 768px) {
+/* Mô tả ngắn */
+.blog-excerpt {
+  font-size: 14px; /* Giảm cỡ chữ mô tả */
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  text-align: justify; /* Căn chữ đều để nhìn mềm mại hơn */
+}
+
+/* Tác giả */
+.blog-author {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  font-style: italic;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
   .blog-card {
     flex-direction: column;
+    max-height: none;
   }
 
   .blog-img-container {
-    height: 250px;
     width: 100%;
+  }
+
+  .blog-img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .blog-card-content {
+    padding: 15px;
+  }
+
+  .blog-heading {
+    font-size: 18px; /* Nhỏ hơn trên mobile */
+  }
+
+  .blog-excerpt {
+    font-size: 13px;
+  }
+
+  .blog-author {
+    font-size: 11px;
   }
 }
