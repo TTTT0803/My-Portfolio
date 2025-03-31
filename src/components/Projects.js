@@ -19,6 +19,7 @@ import certificate1 from "../assets/img/C++.png";
 import certificate2 from "../assets/img/OS.png";
 import certificate3 from "../assets/img/badge.png";
 import imgdoan from "../assets/img/imgdoan.jpg";
+import img7 from "../assets/img/img7.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -296,6 +297,35 @@ export const Projects = () => {
                                 dependency tree in react ....
                               </p>
                               <p className="blog-author">18/2/2025</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="blog-container">
+                          <div className="blog-card">
+                            <div className="blog-img-container">
+                              <a
+                                href="https://www.youtube.com/watch?v=vn97BdYx2K8"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={img7}
+                                  alt="Night City"
+                                  className="blog-img"
+                                />
+                              </a>
+                            </div>
+                            <div className="blog-card-content">
+                              <h1 className="blog-heading">
+                                how to connect project spring mvc in intellij
+                                and mvn install use Jakarta.servlet
+                              </h1>
+                              <p className="blog-excerpt">
+                                To set up and connect a Spring MVC project in
+                                IntelliJ IDEA and use Jakarta Servlet API with
+                                Maven (mvn install), follow these steps
+                              </p>
+                              <p className="blog-author">1/3/2025</p>
                             </div>
                           </div>
                         </div>
